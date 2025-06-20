@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شرح مفصل لمادة اللغة العربية - التوجيهي الأردني</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            line-height: 1.8;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Amiri', serif;
+            color: #0056b3;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: #d9534f;
+            border-bottom-width: 3px;
+            border-bottom-color: #d9534f;
+        }
+        h2 {
+            color: #0275d8;
+        }
+        h3 {
+            color: #5cb85c;
+        }
+        h4 {
+            color: #f0ad4e;
+            border-bottom: 1px dashed #f0ad4e;
+        }
+        .attribution {
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 25px;
+        }
+        p {
+            margin-bottom: 1em;
+            text-align: justify;
+        }
+        ul, ol {
+            padding-right: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 1em;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: right;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            color: #333;
+        }
+        .poem-line {
+            font-family: 'Amiri', serif;
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #8B4513;
+            margin: 10px 0 5px 0;
+        }
+        .explanation {
+            background-color: #fdf5e6;
+            border-right: 4px solid #8B4513;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .quiz-section {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #e9f5ff;
+            border: 2px solid #0056b3;
+            border-radius: 10px;
+        }
+        .question-block {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            border: 1px solid #cce5ff;
+        }
+        .question-block p {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .question-block label {
+            display: block;
+            margin-right: 20px;
+            padding: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .question-block label:hover {
+            background-color: #f0f8ff;
+        }
+        input[type="radio"] {
+            margin-left: 10px;
+        }
+        .submit-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto 0 auto;
+            padding: 12px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #5cb85c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #4cae4c;
+        }
+        #result {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            display: none; /* Hidden by default */
+        }
+        .correct {
+            background-color: #dff0d8;
+            color: #3c763d;
+        }
+        .incorrect {
+            background-color: #f2dede;
+            color: #a94442;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>شرح مفصل ومتعمق للوحدات الخمس الأولى من كتاب اللغة العربية</h1>
+    <p class="attribution">إعداد الطالب: قيس طلال الجازي</p>
+
+    <h2>مقدمة شاملة</h2>
+    <p>يهدف هذا الشرح المفصل إلى تقديم رؤية متعمقة وموسعة للوحدات الخمس الأولى من كتاب اللغة العربية المعتمد في الأردن لطلاب الصف الثاني عشر (التوجيهي) للعام الدراسي 2019/1440. تأتي هذه التفصيلات استجابة لطلبكم بتعميق الشرح وتغطية جميع الجوانب الأدبية والنحوية واللغوية, مع إيلاء اهتمام خاص لتحليل القصائد الشعرية بيتًا بيتًا.</p>
+    <p>يُعد منهاج اللغة العربية في مرحلة التوجيهي حجر الزاوية في المسيرة التعليمية للطلاب، نظرًا لثقله في الامتحان الوزاري الذي يوزع على النحو التالي: 50% للقواعد النحوية والصرفية، 25% للعروض الشعري، و 25% لمهارات التعبير الكتابي. هذا التوزيع يؤكد على الأهمية القصوى للإتقان الشامل لمكونات اللغة العربية.</p>
+    <p>لقد تم تصميم هذا الشرح ليكون مرجعًا متكاملًا، يسد الفجوات، ويوضح الغامض، ويسلط الضوء على الروابط بين المكونات المختلفة للمادة، مما يعزز الفهم العميق ويساعد في التحصيل الأكاديمي المميز.</p>
+
+    <!-- الوحدة الأولى -->
+    <section id="unit1">
+        <h2>الوحدة الأولى: التنشئة الصالحة (سورة آل عمران)</h2>
+        <p>تُعد هذه الوحدة مدخلًا قيمًا للتعرف على جزء من سورة آل عمران، مركزة على قصص الأنبياء وأهمية التربية السليمة والرعاية الإلهية. تهدف إلى ترسيخ القيم الدينية والأخلاقية، وتنمية الحس اللغوي والأدبي لدى الطالب من خلال نص قرآني بليغ.</p>
+        
+        <h3>نظرة عامة على النص (الآيات من 33-51)</h3>
+        <p>تتناول الآيات الكريمة من سورة آل عمران مواضيع متعددة تتكامل لتقديم صورة واضحة عن التنشئة الصالحة والرعاية الإلهية:</p>
+        
+        <h4>اصطفاء الأنبياء (الآيات 33-34)</h4>
+        <p>تبدأ الآيات بذكر اصطفاء الله لآدم، ونوح، وآل إبراهيم، وآل عمران على العالمين. هذا الاصطفاء لم يكن اعتباطًا، بل كان نابعًا من إيمانهم وتقواهم وصلاحهم، ليشكلوا بذلك سلسلة متواصلة من النبوة والرسالة، متصلة بعضها ببعض في التوحيد والرسالة السماوية.</p>
+
+        <h4>نذر أم مريم وميلادها (الآيات 35-37)</h4>
+        <ul>
+            <li>تروي الآيات قصة امرأة عمران التي نذرت ما في بطنها -وهي حامل- خالصًا لخدمة بيت المقدس، معتقدة أنه سيكون ذكرًا، وذلك على عادة أهل زمانها.</li>
+            <li>عندما وضعت أنثى (مريم)، تعجبت وقالت: {رب إني وضعتها أنثى}. لكن الله سبحانه وتعالى قبلها {بقبول حسن} وأنبتها {نباتًا حسنًا}.</li>
+            <li>"النبات الحسن" هنا استعارة قرآنية بليغة تعني التنشئة الكاملة السليمة والعناية الفائقة بمريم في بيتها، مثلما يُعتنى بالزرع الصالح لينمو بشكل صحي ومثمر. وقد كان زكريا عليه السلام هو كفيلها وراعيها.</li>
+        </ul>
+
+        <h4>بشارة زكريا بيحيى (الآيات 38-41)</h4>
+        <ul>
+            <li>يُقدم مشهد دعاء زكريا ربه أن يهبه ذرية طيبة، وقد دفعه لذلك رؤيته لرزق مريم المعجز في غير أوانه.</li>
+            <li>استجاب الله له رغم كبر سنه وعقم زوجته، وبشرته الملائكة بيحيى، واصفة إياه بصفات عظيمة: "مصدقًا بكلمة من الله" (إشارة إلى عيسى عليه السلام)، "وسيدًا" (قائدًا في قومه)، "وحصورًا" (عفيفًا ممتنعًا عن الشهوات)، و"نبيًا من الصالحين".</li>
+            <li>ظهر تعجب زكريا من هذه البشارة، وهذا ليس شكًا في قدرة الله، بل تعجبًا من خرق العادة، فمنح الله له علامة على تحقق الوعد، وهي أن لا يكلم الناس ثلاثة أيام إلا رمزًا.</li>
+        </ul>
+
+        <h4>بشارة مريم بعيسى (الآيات 42-51)</h4>
+        <ul>
+            <li>تتلقى مريم بشارة الملائكة باصطفاء الله لها وتطهرها وتفضيلها على نساء العالمين.</li>
+            <li>تُبشر بميلاد عيسى، كلمة الله، الذي سيكون وجيهًا في الدنيا والآخرة، وسيكلم الناس في المهد وكهلًا، وسيكون من الصالحين.</li>
+            <li>تعجب مريم من البشارة بمولد ولد لها دون أن يمسسها بشر، فيأتي الرد الإلهي بأن ذلك سهل على الله، وأن ذلك سيكون آية للناس ورحمة.</li>
+            <li>تذكر الآيات بعض معجزات عيسى: خلقه من الطين كهيئة الطير ونفخه فيه فيكون طيرًا بإذن الله، وشفاء الأكمه (الأعمى منذ الولادة) والأبرص، وإحياء الموتى بإذن الله، والإنباء بما يأكلون وما يدخرون في بيوتهم.</li>
+            <li>يُختتم النص بدعوة عيسى عليه السلام لبني إسرائيل لعبادة الله وحده.</li>
+        </ul>
+
+        <h3>التحليل الأدبي والبلاغي</h3>
+        <p>يُظهر النص القرآني بلاغة فائقة في تصوير المعاني والقيم:</p>
+        <ul>
+            <li><strong>التشبيه البليغ:</strong> في قوله تعالى: "{وأنبتها نباتًا حسنًا}"، هنا تشبيه بليغ (أُخفيت فيه أداة التشبيه ووجه الشبه) لمريم في نشأتها وتربيتها بالزرع الصالح الذي يُعتنى به جيدًا. يدل هذا التشبيه على دقة العناية والرعاية والتنشئة الإلهية التي حظيت بها مريم، مما أثمر صلاحها وتقواها.</li>
+            <li><strong>الأسلوب الإنشائي (التعجب البلاغي):</strong> سؤال زكريا "أنى يكون لي غلام" وسؤال مريم "أنى يكون لي ولد" ليس للاستفهام الحقيقي، بل للتعجب من خرق العادة، مما يبرز عظمة القدرة الإلهية التي تتجاوز المألوف.</li>
+            <li><strong>الترابط السببي والنتيجة:</strong> توقيت بشارة زكريا وهو قائم يصلي، يدل على الترابط بين الدعاء والعبادة وبين استجابة الله، مما يشجع على المثابرة في العبادة والدعاء.</li>
+            <li><strong>تصوير الإرادة الإلهية:</strong> استخدام كلمة "كن" في خلق عيسى، تؤكد على القدرة المطلقة لله وأن أمره نافذ بكلمة واحدة.</li>
+            <li><strong>التفصيل والتعزيز:</strong> ذكر تفاصيل معجزات عيسى عليه السلام ليس فقط لتثبيت نبوته، بل ليعمق الإيمان بقدرة الله على كل شيء، وليكون دليلًا حيًا على صدق رسالته.</li>
+        </ul>
+
+        <h3>المحتوى اللغوي (المفردات)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>الكلمة</th>
+                    <th>المعنى</th>
+                    <th>الجذر اللغوي</th>
+                    <th>مثال من النص</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>نذر</td><td>ما يوجبه الإنسان على نفسه من طاعة أو عبادة لم تكن واجبة أصلاً</td><td>نذر</td><td>"إني نذرت لك ما في بطني محرراً"</td></tr>
+                <tr><td>ذرية</td><td>نسل الإنسان أو أولاده</td><td>ذرا</td><td>"هب لي من لدنك ذرية طيبة"</td></tr>
+                <tr><td>محرراً</td><td>مخلصًا للعبادة والخدمة، متفرغًا لله</td><td>حرر</td><td>"إني نذرت لك ما في بطني محرراً"</td></tr>
+                <tr><td>كفلها</td><td>تكفل بها، ضمن رعايتها والقيام على شؤونها</td><td>كفل</td><td>"وكفلها زكريا"</td></tr>
+                <tr><td>حصورًا</td><td>من يحبس نفسه عن الشهوات عفةً وزهدًا، مع القدرة عليها</td><td>حصر</td><td>"وسيدًا وحصورًا ونبيًا من الصالحين"</td></tr>
+                <tr><td>الأكمه</td><td>من وُلد أعمى</td><td>كمه</td><td>"وأُبرئُ الأكمه والأبرص"</td></tr>
+                <tr><td>الأبرص</td><td>من به مرض البرص الجلدي</td><td>برص</td><td>"وأُبرئُ الأكمه والأبرص"</td></tr>
+                <tr><td>الغيب</td><td>ما غاب عن الحس والإدراك البشري، علم المستقبل</td><td>غيب</td><td>"ذلك من أنباء الغيب نوحيه إليك"</td></tr>
+                <tr><td>آية</td><td>علامة أو دلالة أو معجزة</td><td>أيي</td><td>"ولنجعله آية للناس"</td></tr>
+            </tbody>
+        </table>
+
+        <h3>القضايا النحوية (كسر همزة إنَّ وتقديم الفاعل والمفعول به)</h3>
+        <h4>1. كسر همزة إنَّ (وجوبًا)</h4>
+        <p>يجب كسر همزة "إنَّ" (تُكتب إِ) في الحالات التالية:</p>
+        <ul>
+            <li><strong>في بداية الكلام:</strong> مثال: إنَّ الصدق منجاة.</li>
+            <li><strong>بعد القول ومشتقاته:</strong> مثال: قال الأستاذ: إنَّ الدرس سهل.</li>
+            <li><strong>بعد جملة النداء:</strong> مثال: "يا مريم إنَّ الله يبشرك".</li>
+            <li><strong>إذا اقترن خبرها باللام المزحلقة:</strong> مثال: إنَّ المنافقين لَكاذبون.</li>
+        </ul>
+
+        <h4>2. تقديم الفاعل والمفعول به</h4>
+        <h5>أولًا: وجوب تقديم الفاعل على المفعول به:</h5>
+        <ul>
+            <li><strong>إذا كان الفاعل ضميرًا متصلًا:</strong> مثال: "كتبتُ الدرسَ".</li>
+            <li><strong>خشية اللبس:</strong> مثال: "صافحت هدى ليلى".</li>
+        </ul>
+        <h5>ثانيًا: وجوب تقديم المفعول به على الفاعل:</h5>
+        <ul>
+            <li><strong>إذا كان المفعول به ضميرًا متصلًا:</strong> مثال: "أكرمني محمدٌ".</li>
+            <li><strong>إذا اتصل بالفاعل ضمير يعود على المفعول به:</strong> مثال: "قرأ الكتابَ صاحبُه".</li>
+            <li><strong>إذا كان المفعول به ضميرًا منفصلًا يفيد الاختصاص:</strong> مثال: "إياك نعبد".</li>
+            <li><strong>إذا كان المفعول به اسم استفهام أو اسم شرط أو كم الخبرية:</strong> مثال: "ماذا قرأتَ؟"</li>
+        </ul>
+        <h5>ثالثًا: جواز تقديم الفاعل أو المفعول به:</h5>
+        <p>عندما توجد قرائن سياقية أو نحوية واضحة تمنع الالتباس. مثال: "أكل التفاحةَ الولدُ".</p>
+
+        <h3>مهارات الكتابة: فن القصة القصيرة</h3>
+        <p>القصة القصيرة هي عمل نثري يروي حدثًا أو مجموعة أحداث متسلسلة. عناصرها:</p>
+        <ol>
+            <li><strong>الشخصيات:</strong> رئيسية وثانوية.</li>
+            <li><strong>الحدث (الحبكة):</strong> تسلسل الوقائع (بداية، عقدة، ذروة، حل).</li>
+            <li><strong>الزمان والمكان:</strong> الإطار الزماني والمكاني للأحداث.</li>
+            <li><strong>العقدة والحل:</strong> نقطة التأزم ونهاية القصة.</li>
+            <li><strong>الفكرة (الهدف):</strong> الرسالة التي يريد الكاتب إيصالها.</li>
+        </ol>
+    </section>
+
+    <!-- الوحدة الثانية -->
+    <section id="unit2">
+        <h2>الوحدة الثانية: صناعة السرور (مقال لأحمد أمين)</h2>
+        <p>تتناول هذه الوحدة مقالًا فلسفيًا عميقًا للكاتب المصري أحمد أمين، يركز فيه على حقيقة السرور ومصدره، مؤكدًا على أن السعادة الحقيقية تنبع من داخل الإنسان لا من الظروف الخارجية.</p>
+        
+        <h3>نظرة عامة على النص</h3>
+        <p>المحور الأساسي لمقال "صناعة السرور" هو التأكيد على أن السرور ليس وليد الظروف الخارجية بالضرورة، بل هو قدرة داخلية يمتلكها الإنسان ويستطيع أن يخلقها بنفسه.</p>
+        <h4>الأفكار الرئيسية في المقال:</h4>
+        <ul>
+            <li><strong>السرور قدرة داخلية:</strong> يرى أحمد أمين أن الله قد منح الإنسان قدرة على خلق السرور.</li>
+            <li><strong>الأشخاص ومستويات السرور:</strong> يشبّه الكاتب الناس بمصابيح مختلفة (المحترق، مصباح النوم، مصباح الحفلات).</li>
+            <li><strong>خطأ الاعتماد على الظروف الخارجية:</strong> يخطّئ من يظن أن السعادة تتوقف على المال أو الصحة.</li>
+            <li><strong>توجيه الفكر مصدر السرور:</strong> يدعو الكاتب إلى التحكم في زمام التفكير وتوجيهه نحو الإيجابية.</li>
+            <li><strong>علاج الحزن بالعمل ونسيان الذات:</strong> يرى أن الانشغال بالعمل النافع ينسي الهموم.</li>
+        </ul>
+
+        <h3>التحليل الأدبي (الصور الفنية وأسلوب الكاتب)</h3>
+        <ul>
+            <li><strong>التشبيهات الحسية:</strong> "المظلم كالمصباح المحترق"، "مصباح الحفلات".</li>
+            <li><strong>الكنايات:</strong> "فارغ الصدر" (راحة البال)، "يُؤرِّق جفنه" (القلق)، "زمام تفكيره" (التحكم).</li>
+            <li><strong>أسلوب الكاتب:</strong> يتميز بالوضوح، المقارنة، الاستدلال العقلي، والتسلسل المنطقي.</li>
+        </ul>
+
+        <h3>القضايا اللغوية: قواعد كتابة الهمزة</h3>
+        <h4>أولًا: الهمزة في أول الكلمة (همزة الوصل والقطع)</h4>
+        <p><strong>همزة الوصل (ا):</strong> تُنطق في بداية الكلام وتُسقط في وصله. مواضعها: الأسماء العشرة السماعية، أمر الثلاثي، ماضي وأمر ومصدر الخماسي والسداسي, "الـ" التعريف.</p>
+        <p><strong>همزة القطع (أَ، إِ، أُ):</strong> تُنطق دائمًا. مواضعها: ماضي الثلاثي ومصدره، ماضي وأمر ومصدر الرباعي، مضارع المتكلم، جميع الحروف والأسماء ما عدا السماعية.</p>
+        
+        <h4>ثانيًا: الهمزة المتوسطة</h4>
+        <p>تُكتب على الحرف الذي يناسب الحركة الأقوى بين حركتها وحركة ما قبلها. (الكسرة > الضمة > الفتحة > السكون).</p>
+        <ul>
+            <li>ذِئْب (على نبرة لأن الكسرة أقوى من السكون).</li>
+            <li>مُؤْمن (على واو لأن الضمة أقوى من السكون).</li>
+            <li>يَسْأَل (على ألف لأن الفتحة أقوى من السكون).</li>
+        </ul>
+
+        <h4>ثالثًا: الهمزة المتطرفة</h4>
+        <p>تُكتب على حرف يناسب حركة ما قبلها فقط.</p>
+        <ul>
+            <li>سبقت بفتحة: على ألف (قرَأ).</li>
+            <li>سبقت بضمة: على واو (تباطُؤ).</li>
+            <li>سبقت بكسرة: على نبرة (شاطِئ).</li>
+            <li>سبقت بسكون: على السطر (دفْء، سماء).</li>
+        </ul>
+
+        <h3>مهارات الكتابة: فن كتابة المقالة</h3>
+        <p>المقالة هي فن نثري يتناول قضية معينة. هيكلها:</p>
+        <ol>
+            <li><strong>المقدمة:</strong> جزء تمهيدي قصير وجذاب يقدم الموضوع.</li>
+            <li><strong>العرض (صلب الموضوع):</strong> الجزء الأطول، يُقدم فيه الكاتب أفكاره مدعومة بالأدلة والبراهين، مقسمًا إلى فقرات.</li>
+            <li><strong>الخاتمة:</strong> جزء ختامي موجز يلخص الأفكار ويؤكد الهدف.</li>
+        </ol>
+    </section>
+
+    <!-- الوحدة الثالثة -->
+    <section id="unit3">
+        <h2>الوحدة الثالثة: في أدب الصداقة (قصيدة واحرّ قلباهُ للمتنبي)</h2>
+        <p>تُعد قصيدة المتنبي "واحرّ قلباهُ" من عيون الشعر العربي، وتجسد العلاقة المعقدة بين الشاعر وسيف الدولة الحمداني.</p>
+        
+        <h3>التحليل الأدبي للقصيدة (بيتًا بيتًا)</h3>
+        
+        <div class="poem-line">واحَـرَّ قَـلباهُ مـمَّنْ قـلبُهُ شَـبِمُ / ومَـنْ بِجِسْمي وحالي عنده سَقَمُ</div>
+        <p class="explanation"><strong>الشرح:</strong> يبدأ بالندبة والتحسر على قلبه الذي يحترق شوقًا، بينما قلب سيف الدولة بارد ("شبم")، ويشتكي من أن سيف الدولة لا يكترث لمرضه وسوء حاله ("سقم").<br><strong>البلاغة:</strong> "واحرّ قلباهُ" أسلوب نداء ندبي. طباق بين "حرّ" و"شبم".</p>
+        
+        <div class="poem-line">يا أعدَلَ الناسِ إلا في معاملتي / فـيكَ الخصامُ وأنتَ الخَصمُ والحَكَمُ</div>
+        <p class="explanation"><strong>الشرح:</strong> يصف سيف الدولة بأنه عادل مع الجميع إلا معه، ويشكو من أنه لا يجد من ينصفه لأن سيف الدولة هو الخصم والحكم في آن واحد.<br><strong>البلاغة:</strong> "يا أعدل الناس" نداء تعظيم قلبه الاستثناء إلى عتاب لاذع. "أنت الخصم والحكم" كناية عن الظلم.</p>
+
+        <div class="poem-line">أعيذُها نَظَراتٍ مِنكَ صادقةً / أن تحسَبَ الشحمَ فيمن شحمهُ وَرَمُ</div>
+        <p class="explanation"><strong>الشرح:</strong> يحذر سيف الدولة من خداع المظاهر، ومن أن يظن المنافقين (الذين شحمهم ورم) أهل صلاح (أصحاب شحم).<br><strong>البلاغة:</strong> "الشحم فيمن شحمه ورم" استعارة تمثيلية أو كناية عن خداع المظاهر.</p>
+
+        <div class="poem-line">فأنا الذي نَظَرَ الأعمى إلى أدبي / وأسمعتْ كلماتي من به صَمَمُ</div>
+        <p class="explanation"><strong>الشرح:</strong> فخر عظيم بقوة شعره وتأثيره، حيث يبلغ من الشهرة والقوة أن الأعمى يراه والأصم يسمعه.<br><strong>البلاغة:</strong> مبالغة وكناية عن قوة وشهرة أدبه.</p>
+
+        <div class="poem-line">الخيلُ والليلُ والبيداءُ تعرفني / والسيفُ والرمحُ والقرطاسُ والقلمُ</div>
+        <p class="explanation"><strong>الشرح:</strong> يفتخر بشمول شهرته في مجالات الفروسية والحرب والشعر والأدب.<br><strong>البلاغة:</strong> كناية عن شهرته الواسعة.</p>
+
+        <h3>القضايا النحوية (صيغ المبالغة والصفة المشبهة، وإعراب الفعل المضارع المعتل الآخر)</h3>
+        <h4>1. صيغ المبالغة والصفة المشبهة</h4>
+        <p><strong>صيغ المبالغة:</strong> تدل على الكثرة والمبالغة في حدوث الفعل (فَعّال, مِفعال, فَعول, فَعيل, فَعِل). مثال: قَتّال، صَبور، حَذِر.</p>
+        <p><strong>الصفة المشبهة:</strong> تدل على صفة ثابتة أو شبه ثابتة في الموصوف (أفعَل, فَعْلان, فَعيل, فُعال, فَعِل). مثال: أزرق، عطشان، كريم.</p>
+
+        <h4>2. إعراب الفعل المضارع المعتل الآخر</h4>
+        <ul>
+            <li><strong>في حالة الرفع:</strong> تُقدر الضمة للتعذر على الألف (يخشَى)، وللثقل على الواو والياء (يدعُو، يرمِي).</li>
+            <li><strong>في حالة النصب:</strong> تُقدر الفتحة للتعذر على الألف (لن يرضَى)، وتظهر على الواو والياء لخفتها (لن يدعوَ، كي ترميَ).</li>
+            <li><strong>في حالة الجزم:</strong> علامة جزمه حذف حرف العلة من آخره (لم يخشَ، لا تدعُ، لم يرمِ).</li>
+        </ul>
+
+        <h3>مهارات الكتابة: كتابة الرسالة</h3>
+        <p>الرسالة وسيلة تواصل كتابي. أنواعها: شخصية ورسمية. عناصرها الرئيسية:</p>
+        <ol>
+            <li><strong>البسملة والتاريخ.</strong></li>
+            <li><strong>المرسَل إليه (الافتتاحية).</strong></li>
+            <li><strong>المقدمة (تمهيد).</strong></li>
+            <li><strong>صلب الموضوع (العرض).</strong></li>
+<li><strong>الخاتمة (تلخيص وتمنيات).</strong></li>
+            <li><strong>التوقيع (اسم المرسِل).</strong></li>
+        </ol>
+    </section>
+
+    <!-- الوحدة الرابعة -->
+    <section id="unit4">
+        <h2>الوحدة الرابعة: الثقافة الصحية (نص الحساسية)</h2>
+        <p>تقدم هذه الوحدة نصًا علميًا عن الحساسية، وهو مرض شائع. تهدف إلى تعريف الطلاب بهذا المرض، أسبابه، أنواعه، أعراضه، وطرق الوقاية منه.</p>
+
+        <h3>نظرة عامة على النص</h3>
+        <h4>المفاهيم الرئيسية التي يتناولها النص:</h4>
+        <ul>
+            <li><strong>تعريف الحساسية:</strong> رد فعل غير طبيعي من الجسم تجاه مواد غريبة.</li>
+            <li><strong>أسباب الحساسية:</strong> استنشاق (غبار)، ابتلاع (طعام)، لمس (مستحضرات)، حقن (أدوية).</li>
+            <li><strong>آلية الحساسية:</strong> يهيج الجهاز المناعي وينتج أجسامًا مضادة تتفاعل مع المسببات وتؤدي لظهور الأعراض.</li>
+            <li><strong>أنواع الحساسية:</strong> حساسية الجهاز التنفسي (ربو)، الحساسية الجلدية (إكزيما)، حساسية الطعام.</li>
+            <li><strong>الوقاية:</strong> التهوية الجيدة، تجنب الأماكن الملوثة.</li>
+        </ul>
+
+        <h3>القضايا النحوية: البدل واسم الزمان والمكان</h3>
+        <h4>1. البدل</h4>
+        <p>هو تابع مقصود بالحكم بلا واسطة. أنواعه:</p>
+        <ul>
+            <li><strong>البدل المطابق (كل من كل):</strong> البدل هو نفسه المبدل منه. مثال: الخليفةُ عمرُ.</li>
+            <li><strong>بدل بعض من كل:</strong> يكون البدل جزءًا حقيقيًا ماديًا. مثال: قرأتُ الكتابَ نصفَـهُ.</li>
+            <li><strong>بدل الاشتمال:</strong> يكون البدل مما يشتمل عليه المبدل منه (معنويًا). مثال: أعجبني الطالبُ خُلُقُـهُ.</li>
+        </ul>
+        
+        <h4>2. اسم الزمان والمكان</h4>
+        <p>اسمان مشتقان يدلان على زمن أو مكان وقوع الفعل.</p>
+        <ul>
+            <li><strong>من الثلاثي:</strong> على وزن "مَفْعَل" (مَدْخَل، مَرْمَى) أو "مَفْعِل" (مَهْبِط، مَوْعِد).</li>
+            <li><strong>من غير الثلاثي:</strong> على وزن اسم المفعول (ميم مضمومة وفتح ما قبل الآخر). مثال: مُجْتَمَع، مُلْتَقَى.</li>
+        </ul>
+        
+        <h3>مهارات الكتابة: التلخيص</h3>
+        <p>هو إعادة صياغة نص طويل بأسلوب الكاتب الخاص مع الاحتفاظ بالأفكار الرئيسية وبحجم أقل.</p>
+        <h4>خطوات التلخيص:</h4>
+        <ol>
+            <li>القراءة الأولية الشاملة للفهم العام.</li>
+            <li>القراءة التحليلية لتحديد الأفكار الرئيسية.</li>
+            <li>استخراج الأفكار الرئيسية وتدوينها.</li>
+            <li>إعادة الصياغة بأسلوبك الخاص وربط الأفكار.</li>
+            <li>المراجعة والتدقيق للتأكد من الدقة والسلامة اللغوية.</li>
+        </ol>
+    </section>
+
+    <!-- الوحدة الخامسة -->
+    <section id="unit5">
+        <h2>الوحدة الخامسة: وأنت الحب يا أردن (قصيدة لمحمود فاضل التل)</h2>
+        <p>تُعد قصيدة "وأنت الحب يا أردن" أيقونة في الشعر الوطني الأردني، حيث تُعبر عن مشاعر الشوق العميق والحب والانتماء الراسخ للأردن أثناء الغربة.</p>
+
+        <h3>التحليل الأدبي للقصيدة (بيتًا بيتًا)</h3>
+        
+        <div class="poem-line">وأرسمُ لوحةً للشوقِ تسكنُ رحلةَ الزمنِ / ولونُها من مدادِ الروحِ والقلبِ الذي اضطربَ</div>
+        <p class="explanation"><strong>الشرح:</strong> يعبر عن شدة شوقه بأنه سيرسم لوحة خالدة لهذا الشوق، ألوانها مستمدة من حبر روحه واضطراب قلبه.<br><strong>البلاغة:</strong> "لوحة للشوق" استعارة مكنية. "مداد الروح" استعارة للدلالة على عمق الشوق.</p>
+
+        <div class="poem-line">سآتي في شعاعِ الشمسِ والظلماءِ والقمرِ / سآتي في رياحِ الليلِ إعصارًا من الغضبِ</div>
+        <p class="explanation"><strong>الشرح:</strong> يؤكد عودته الحتمية في كل الظروف، مما يدل على أن حبه لوطنه يجعله يتجاوز كل العوائق.<br><strong>البلاغة:</strong> "إعصارًا من الغضب" تشبيه بليغ يدل على قوة عزيمته.</p>
+
+        <div class="poem-line">وأنتِ الحبُّ يا أردُنُ، أنتِ الدنيا المزروعةُ في كياني / وأنتِ الأرضُ والسَّماءُ، أنتِ الشمسُ والقمرُ</div>
+        <p class="explanation"><strong>الشرح:</strong> خلاصة مشاعر الشاعر، فالأردن هو الحب نفسه وهو كل شيء في عالمه، حاضر في أعماق كيانه.<br><strong>البلاغة:</strong> "أنتِ الحب" و "أنتِ الدنيا" تشبيهات بليغة للدلالة على شمولية حب الوطن.</p>
+
+        <h3>القضايا النحوية (اسم المرة واسم الهيئة، والنداء)</h3>
+        <h4>1. اسم المرة واسم الهيئة</h4>
+        <p><strong>اسم المرة:</strong> يدل على وقوع الفعل مرة واحدة. من الثلاثي على وزن "فَعْلَة" (نزْلة)، ومن غير الثلاثي بزيادة تاء على مصدره (انطلاقَة).</p>
+        <p><strong>اسم الهيئة:</strong> يدل على هيئة وقوع الفعل. من الثلاثي على وزن "فِعْلَة" (مِشْية)، ومن غير الثلاثي بوصف المصدر (انطلاقة الصقر).</p>
+
+        <h4>2. النداء</h4>
+        <p>أسلوب لطلب إقبال المخاطب. أنواعه:</p>
+        <ul>
+            <li><strong>المنادى المعرب (منصوب):</strong>
+                <ul>
+                    <li><strong>المضاف:</strong> يا طالبَ العلمِ.</li>
+                    <li><strong>الشبيه بالمضاف:</strong> يا حاملًا الحقيبةَ.</li>
+                    <li><strong>النكرة غير المقصودة:</strong> يا غافلًا انتبه.</li>
+                </ul>
+            </li>
+            <li><strong>المنادى المبني (في محل نصب):</strong>
+                <ul>
+                    <li><strong>العلم المفرد:</strong> يا محمدُ، يا أردنُ.</li>
+                    <li><strong>النكرة المقصودة:</strong> يا سائقُ (لسائق معين).</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    
+    <!-- قسم الامتحان -->
+    <section class="quiz-section">
+        <h2>امتحان محوسب (40 سؤال)</h2>
+        <p>اختر الإجابة الصحيحة لكل سؤال ثم اضغط على زر "عرض النتيجة" في الأسفل.</p>
+        <form id="quiz-form">
+            <!-- Unit 1 Questions -->
+            <div class="question-block">
+                <p>1. ما معنى كلمة "حصورًا" في قوله تعالى "وسيدًا وحصورًا"؟</p>
+                <label><input type="radio" name="q1" value="a"> قائدًا في قومه</label>
+                <label><input type="radio" name="q1" value="b"> من يحبس نفسه عن الشهوات عفةً</label>
+                <label><input type="radio" name="q1" value="c"> من وُلد أعمى</label>
+                <label><input type="radio" name="q1" value="d"> مخلصًا للعبادة</label>
+            </div>
+            <div class="question-block">
+                <p>2. الصورة البلاغية في قوله تعالى "وأنبتها نباتًا حسنًا" هي:</p>
+                <label><input type="radio" name="q2" value="a"> كناية</label>
+                <label><input type="radio" name="q2" value="b"> استعارة مكنية</label>
+                <label><input type="radio" name="q2" value="c"> تشبيه بليغ</label>
+                <label><input type="radio" name="q2" value="d"> طباق</label>
+            </div>
+            <div class="question-block">
+                <p>3. أي من الجمل التالية يجب فيها كسر همزة "إنَّ"؟</p>
+                <label><input type="radio" name="q3" value="a"> علمتُ أنَّ الامتحان سهل.</label>
+                <label><input type="radio" name="q3" value="b"> سرني أنكَ ناجح.</label>
+                <label><input type="radio" name="q3" value="c"> قال المعلم: إنَّ الاجتهاد مفتاح النجاح.</label>
+                <label><input type="radio" name="q3" value="d"> أود أنَّك تزورني.</label>
+            </div>
+            <div class="question-block">
+                <p>4. ما سبب وجوب تقديم المفعول به على الفاعل في جملة "قرأ الكتابَ صاحبُه"؟</p>
+                <label><input type="radio" name="q4" value="a"> لأن المفعول به ضمير متصل.</label>
+                <label><input type="radio" name="q4" value="b"> لأن الفاعل ضمير متصل.</label>
+                <label><input type="radio" name="q4" value="c"> لاتصال الفاعل بضمير يعود على المفعول به.</label>
+                <label><input type="radio" name="q4" value="d"> خشية اللبس.</label>
+            </div>
+            <div class="question-block">
+                <p>5. من معجزات عيسى عليه السلام التي لم تُذكر في النص:</p>
+                <label><input type="radio" name="q5" value="a"> إحياء الموتى بإذن الله.</label>
+                <label><input type="radio" name="q5" value="b"> شفاء الأكمه والأبرص.</label>
+                <label><input type="radio" name="q5" value="c"> شق البحر.</label>
+                <label><input type="radio" name="q5" value="d"> الإنباء بما يدخرون في بيوتهم.</label>
+            </div>
+            <div class="question-block">
+                <p>6. ما جذر كلمة "ذرية"؟</p>
+                <label><input type="radio" name="q6" value="a"> ذرر</label>
+                <label><input type="radio" name="q6" value="b"> دري</label>
+                <label><input type="radio" name="q6" value="c"> ذرو</label>
+                <label><input type="radio" name="q6" value="d"> ذرأ</label>
+            </div>
+            <div class="question-block">
+                <p>7. في قوله تعالى "وكفلها زكريا"، الفاعل هو:</p>
+                <label><input type="radio" name="q7" value="a"> ضمير مستتر</label>
+                <label><input type="radio" name="q7" value="b"> الهاء في "كفلها"</label>
+                <label><input type="radio" name="q7" value="c"> زكريا</label>
+                <label><input type="radio" name="q7" value="d"> امرأة عمران</label>
+            </div>
+            <div class="question-block">
+                <p>8. أي عنصر من عناصر القصة القصيرة يمثل نقطة التأزم؟</p>
+                <label><input type="radio" name="q8" value="a"> البداية</label>
+                <label><input type="radio" name="q8" value="b"> الحل</label>
+                <label><input type="radio" name="q8" value="c"> الذروة</label>
+                <label><input type="radio" name="q8" value="d"> العقدة</label>
+            </div>
+
+            <!-- Unit 2 Questions -->
+            <div class="question-block">
+                <p>9. حسب مقال أحمد أمين، ما هو المصدر الأساسي للسرور؟</p>
+                <label><input type="radio" name="q9" value="a"> الظروف الخارجية كالغنى والصحة.</label>
+                <label><input type="radio" name="q9" value="b"> القدرة الداخلية للإنسان على خلقه.</label>
+                <label><input type="radio" name="q9" value="c"> الانعزال عن الناس.</label>
+                <label><input type="radio" name="q9" value="d"> كثرة التفكير في الذات.</label>
+            </div>
+            <div class="question-block">
+                <p>10. الكناية في عبارة "فارغ الصدر" تعني:</p>
+                <label><input type="radio" name="q10" value="a"> الجوع</label>
+                <label><input type="radio" name="q10" value="b"> الجهل</label>
+                <label><input type="radio" name="q10" value="c"> راحة البال</label>
+                <label><input type="radio" name="q10" value="d"> الخوف</label>
+            </div>
+            <div class="question-block">
+                <p>11. أي كلمة من الكلمات التالية همزتها همزة وصل؟</p>
+                <label><input type="radio" name="q11" value="a"> أحمد</label>
+                <label><input type="radio" name="q11" value="b"> إيمان</label>
+                <label><input type="radio" name="q11" value="c"> استَخدَمَ</label>
+                <label><input type="radio" name="q11" value="d"> إلى</label>
+            </div>
+            <div class="question-block">
+                <p>12. كتبت الهمزة في كلمة "مُؤْمن" على واو لأن:</p>
+                <label><input type="radio" name="q12" value="a"> الهمزة مضمومة وما قبلها ساكن.</label>
+                <label><input type="radio" name="q12" value="b"> الهمزة ساكنة وما قبلها مضموم.</label>
+                <label><input type="radio" name="q12" value="c"> الهمزة مفتوحة وما قبلها مضموم.</label>
+                <label><input type="radio" name="q12" value="d"> الهمزة مضمومة وما قبلها مفتوح.</label>
+            </div>
+            <div class="question-block">
+                <p>13. "الشخص الذي يضيء لنفسه وللآخرين" شبهه الكاتب بـ:</p>
+                <label><input type="radio" name="q13" value="a"> المصباح المحترق</label>
+                <label><input type="radio" name="q13" value="b"> مصباح النوم</label>
+                <label><input type="radio" name="q13" value="c"> مصباح الحفلات</label>
+                <label><input type="radio" name="q13" value="d"> الشمس</label>
+            </div>
+            <div class="question-block">
+                <p>14. ما معنى كلمة "يكتنف"؟</p>
+                <label><input type="radio" name="q14" value="a"> يبتعد</label>
+                <label><input type="radio" name="q14" value="b"> يكتشف</label>
+                <label><input type="radio" name="q14" value="c"> يحيط</label>
+                <label><input type="radio" name="q14" value="d"> يمنح</label>
+            </div>
+            <div class="question-block">
+                <p>15. الجزء الذي يقدم فيه الكاتب أدلته وبراهينه في المقالة هو:</p>
+                <label><input type="radio" name="q15" value="a"> المقدمة</label>
+                <label><input type="radio" name="q15" value="b"> العرض</label>
+                <label><input type="radio" name="q15" value="c"> الخاتمة</label>
+                <label><input type="radio" name="q15" value="d"> العنوان</label>
+            </div>
+            <div class="question-block">
+                <p>16. كتبت الهمزة في كلمة "دفْء" على السطر لأنها:</p>
+                <label><input type="radio" name="q16" value="a"> متطرفة وما قبلها ساكن.</label>
+                <label><input type="radio" name="q16" value="b"> متطرفة وما قبلها مفتوح.</label>
+                <label><input type="radio" name="q16" value="c"> متوسطة وساكنة.</label>
+                <label><input type="radio" name="q16" value="d"> متطرفة وما قبلها مكسور.</label>
+            </div>
+
+            <!-- Unit 3 Questions -->
+            <div class="question-block">
+                <p>17. ما معنى كلمة "شَبِم" الواردة في مطلع قصيدة المتنبي؟</p>
+                <label><input type="radio" name="q17" value="a"> حار</label>
+                <label><input type="radio" name="q17" value="b"> مريض</label>
+                <label><input type="radio" name="q17" value="c"> بارد</label>
+                <label><input type="radio" name="q17" value="d"> حزين</label>
+            </div>
+            <div class="question-block">
+                <p>18. في قول المتنبي "أنت الخصم والحكم"، الغرض البلاغي هو:</p>
+                <label><input type="radio" name="q18" value="a"> المدح</label>
+                <label><input type="radio" name="q18" value="b"> إظهار اليأس من الإنصاف</label>
+                <label><input type="radio" name="q18" value="c"> الفخر</label>
+                <label><input type="radio" name="q18" value="d"> التهديد</label>
+            </div>
+            <div class="question-block">
+                <p>19. أي من الكلمات التالية صيغة مبالغة على وزن "فَعول"؟</p>
+                <label><input type="radio" name="q19" value="a"> حَذِر</label>
+                <label><input type="radio" name="q19" value="b"> مِقدام</label>
+                <label><input type="radio" name="q19" value="c"> شَكور</label>
+                <label><input type="radio" name="q19" value="d"> سميع</label>
+            </div>
+            <div class="question-block">
+                <p>20. ما إعراب الفعل "يرمِي" في جملة "لم يرمِ اللاعب الكرة"؟</p>
+                <label><input type="radio" name="q20" value="a"> فعل مضارع مجزوم وعلامة جزمه السكون.</label>
+                <label><input type="radio" name="q20" value="b"> فعل مضارع مجزوم وعلامة جزمه حذف حرف العلة.</label>
+                <label><input type="radio" name="q20" value="c"> فعل مضارع مرفوع وعلامة رفعه الضمة المقدرة.</label>
+                <label><input type="radio" name="q20" value="d"> فعل مضارع منصوب وعلامة نصبه الفتحة الظاهرة.</label>
+            </div>
+            <div class="question-block">
+                <p>21. ما معنى كلمة "يصِم" في بيت "وشر ما يكسب الإنسان ما يصم"؟</p>
+                <label><input type="radio" name="q21" value="a"> يصيب</label>
+                <label><input type="radio" name="q21" value="b"> يصمت</label>
+                <label><input type="radio" name="q21" value="c"> يعيب</label>
+                <label><input type="radio" name="q21" value="d"> يجمع</label>
+            </div>
+            <div class="question-block">
+                <p>22. كلمة "أحمر" هي:</p>
+                <label><input type="radio" name="q22" value="a"> صيغة مبالغة</label>
+                <label><input type="radio" name="q22" value="b"> صفة مشبهة</label>
+                <label><input type="radio" name="q22" value="c"> اسم فاعل</label>
+                <label><input type="radio" name="q22" value="d"> اسم مفعول</label>
+            </div>
+            <div class="question-block">
+                <p>23. الغرض من قصيدة "واحرّ قلباهُ" بشكل عام هو:</p>
+                <label><input type="radio" name="q23" value="a"> مدح سيف الدولة</label>
+                <label><input type="radio" name="q23" value="b"> هجاء سيف الدولة</label>
+                <label><input type="radio" name="q23" value="c"> عتاب سيف الدولة ممزوج بالفخر والحب</label>
+                <label><input type="radio" name="q23" value="d"> وصف المعارك</label>
+            </div>
+            <div class="question-block">
+                <p>24. إعراب الفعل "يدعو" في جملة "لن يدعوَ المؤمن للشر" هو:</p>
+                <label><input type="radio" name="q24" value="a"> فعل مضارع منصوب بالفتحة الظاهرة</label>
+                <label><input type="radio" name="q24" value="b"> فعل مضارع منصوب بالفتحة المقدرة</label>
+                <label><input type="radio" name="q24" value="c"> فعل مضارع مجزوم بحذف حرف العلة</label>
+                <label><input type="radio" name="q24" value="d"> فعل مضارع مرفوع بالضمة المقدرة</label>
+            </div>
+
+            <!-- Unit 4 Questions -->
+            <div class="question-block">
+                <p>25. أي من الآتي ليس من مسببات الحساسية عن طريق الاستنشاق حسب النص؟</p>
+                <label><input type="radio" name="q25" value="a"> حبوب اللقاح</label>
+                <label><input type="radio" name="q25" value="b"> الغبار</label>
+                <label><input type="radio" name="q25" value="c"> البنسلين</label>
+                <label><input type="radio" name="q25" value="d"> دخان السجائر</label>
+            </div>
+            <div class="question-block">
+                <p>26. ما نوع البدل في جملة "أعجبني الطالبُ خُلُقُه"؟</p>
+                <label><input type="radio" name="q26" value="a"> بدل مطابق</label>
+                <label><input type="radio" name="q26" value="b"> بدل بعض من كل</label>
+                <label><input type="radio" name="q26" value="c"> بدل اشتمال</label>
+                <label><input type="radio" name="q26" value="d"> بدل تفصيل</label>
+            </div>
+            <div class="question-block">
+                <p>27. اسم المكان من الفعل "سبَحَ" هو:</p>
+                <label><input type="radio" name="q27" value="a"> مَسْبِح</label>
+                <label><input type="radio" name="q27" value="b"> مَسْبَح</label>
+                <label><input type="radio" name="q27" value="c"> سِباحة</label>
+                <label><input type="radio" name="q27" value="d"> مُسَبَّح</label>
+            </div>
+            <div class="question-block">
+                <p>28. في جملة "هذا الطالبُ مجتهد"، كلمة "الطالبُ" تُعرب:</p>
+                <label><input type="radio" name="q28" value="a"> خبر</label>
+                <label><input type="radio" name="q28" value="b"> فاعل</label>
+                <label><input type="radio" name="q28" value="c"> بدل مطابق مرفوع</label>
+                <label><input type="radio" name="q28" value="d"> نعت</label>
+            </div>
+            <div class="question-block">
+                <p>29. "وحدات تكاثر لا جنسي صغيرة جدًا تنتشر في الهواء"، هذا تعريف لـ:</p>
+                <label><input type="radio" name="q29" value="a"> الأجسام المضادة</label>
+                <label><input type="radio" name="q29" value="b"> الشعيرات الدموية</label>
+                <label><input type="radio" name="q29" value="c"> الجيوب الأنفية</label>
+                <label><input type="radio" name="q29" value="d"> الأبواغ</label>
+            </div>
+            <div class="question-block">
+                <p>30. كلمة "مُلتقى" في جملة "النادي ملتقى الأصدقاء" هي:</p>
+                <label><input type="radio" name="q30" value="a"> اسم زمان</label>
+                <label><input type="radio" name="q30" value="b"> اسم مكان</label>
+                <label><input type="radio" name="q30" value="c"> اسم مفعول</label>
+                <label><input type="radio" name="q30" value="d"> مصدر ميمي</label>
+            </div>
+            <div class="question-block">
+                <p>31. إعادة صياغة نص بأسلوبك مع الحفاظ على الأفكار الرئيسية هو فن:</p>
+                <label><input type="radio" name="q31" value="a"> القصة</label>
+                <label><input type="radio" name="q31" value="b"> المقالة</label>
+                <label><input type="radio" name="q31" value="c"> التلخيص</label>
+                <label><input type="radio" name="q31" value="d"> الرسالة</label>
+            </div>
+            <div class="question-block">
+                <p>32. جذر كلمة "امتدت" هو:</p>
+                <label><input type="radio" name="q32" value="a"> مد</label>
+                <label><input type="radio" name="q32" value="b"> مدد</label>
+                <label><input type="radio" name="q32" value="c"> متد</label>
+                <label><input type="radio" name="q32" value="d"> امتد</label>
+            </div>
+
+            <!-- Unit 5 Questions -->
+            <div class="question-block">
+                <p>33. ما الموضوع الرئيسي لقصيدة "وأنت الحب يا أردن"؟</p>
+                <label><input type="radio" name="q33" value="a"> وصف طبيعة الأردن</label>
+                <label><input type="radio" name="q33" value="b"> الفخر بانتصارات الجيش</label>
+                <label><input type="radio" name="q33" value="c"> الشوق والحنين للوطن في الغربة</label>
+                <label><input type="radio" name="q33" value="d"> عتاب المحبوبة</label>
+            </div>
+            <div class="question-block">
+                <p>34. اسم المرة من الفعل "نَزَلَ" هو:</p>
+                <label><input type="radio" name="q34" value="a"> نُزول</label>
+                <label><input type="radio" name="q34" value="b"> نِزْلَة</label>
+                <label><input type="radio" name="q34" value="c"> نَزْلَة</label>
+                <label><input type="radio" name="q34" value="d"> مَنْزِل</label>
+            </div>
+            <div class="question-block">
+                <p>35. ما نوع المنادى في "يا طالبَ العلمِ، اجتهد"؟</p>
+                <label><input type="radio" name="q35" value="a"> علم مفرد</label>
+                <label><input type="radio" name="q35" value="b"> نكرة مقصودة</label>
+                <label><input type="radio" name="q35" value="c"> مضاف</label>
+                <label><input type="radio" name="q35" value="d"> شبيه بالمضاف</label>
+            </div>
+            <div class="question-block">
+                <p>36. اسم الهيئة من الفعل "مَشَى" هو:</p>
+                <label><input type="radio" name="q36" value="a"> مَشْيَة</label>
+                <label><input type="radio" name="q36" value="b"> مِشْيَة</label>
+                <label><input type="radio" name="q36" value="c"> مَمْشَى</label>
+                <label><input type="radio" name="q36" value="d"> مَاشٍ</label>
+            </div>
+            <div class="question-block">
+                <p>37. "الخيال الذي يطوف في الذهن" هو معنى كلمة:</p>
+                <label><input type="radio" name="q37" value="a"> الوجدان</label>
+                <label><input type="radio" name="q37" value="b"> الطيف</label>
+                <label><input type="radio" name="q37" value="c"> البشرى</label>
+                <label><input type="radio" name="q37" value="d"> الظفر</label>
+            </div>
+            <div class="question-block">
+                <p>38. حكم المنادى في جملة "يا أردنُ" هو:</p>
+                <label><input type="radio" name="q38" value="a"> منصوب</label>
+                <label><input type="radio" name="q38" value="b"> مرفوع</label>
+                <label><input type="radio" name="q38" value="c"> مبني على الضم في محل نصب</label>
+                <label><input type="radio" name="q38" value="d"> مجرور</label>
+            </div>
+            <div class="question-block">
+                <p>39. في قول الشاعر "لونها من مداد الروح"، الصورة الفنية هي:</p>
+                <label><input type="radio" name="q39" value="a"> طباق</label>
+                <label><input type="radio" name="q39" value="b"> استعارة</label>
+                <label><input type="radio" name="q39" value="c"> جناس</label>
+                <label><input type="radio" name="q39" value="d"> سجع</label>
+            </div>
+            <div class="question-block">
+                <p>40. ما معنى كلمة "الظَّفَر"؟</p>
+                <label><input type="radio" name="q40" value="a"> الهزيمة</label>
+                <label><input type="radio" name="q40" value="b"> الفوز والنصر</label>
+                <label><input type="radio" name="q40" value="c"> الشوق</label>
+                <label><input type="radio" name="q40" value="d"> الخبر السار</label>
+            </div>
+
+            <button type="button" class="submit-btn" onclick="submitQuiz()">عرض النتيجة</button>
+        </form>
+        <div id="result"></div>
+    </section>
+
+</div>
+
+<script>
+    function submitQuiz() {
+        const correctAnswers = {
+            q1: 'b', q2: 'c', q3: 'c', q4: 'c', q5: 'c', q6: 'd', q7: 'c', q8: 'd',
+            q9: 'b', q10: 'c', q11: 'c', q12: 'b', q13: 'c', q14: 'c', q15: 'b', q16: 'a',
+            q17: 'c', q18: 'b', q19: 'c', q20: 'b', q21: 'c', q22: 'b', q23: 'c', q24: 'a',
+            q25: 'c', q26: 'c', q27: 'b', q28: 'c', q29: 'd', q30: 'b', q31: 'c', q32: 'b',
+            q33: 'c', q34: 'c', q35: 'c', q36: 'b', q37: 'b', q38: 'c', q39: 'b', q40: 'b'
+        };
+        let score = 0;
+        const form = document.getElementById('quiz-form');
+        const totalQuestions = Object.keys(correctAnswers).length;
+
+        for (const question in correctAnswers) {
+            const selectedAnswer = form.querySelector(`input[name="${question}"]:checked`);
+            if (selectedAnswer) {
+                if (selectedAnswer.value === correctAnswers[question]) {
+                    score++;
+                }
+            }
+        }
+        
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = `نتيجتك هي: ${score} من ${totalQuestions}`;
+        
+        if (score >= totalQuestions * 0.8) { // 80% or more
+            resultDiv.className = 'correct';
+            resultDiv.innerHTML += "<br>ممتاز! عمل رائع.";
+        } else {
+            resultDiv.className = 'incorrect';
+            resultDiv.innerHTML += "<br>جيد، حاول مراجعة الأخطاء لتحسين نتيجتك.";
+        }
+        
+        resultDiv.style.display = 'block';
+        resultDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
